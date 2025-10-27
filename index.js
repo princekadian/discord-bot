@@ -8,7 +8,7 @@ const client = new Client({
 });
 
 // Replace with your real bot token and server IP
-const TOKEN = 'MTQzMjM3MDk2NDg2NzU3OTkxMQ.GSsrJM.8F7N-QTHWRdf7l2svhVH6K9ZdU681Sey-6OthY';
+const TOKEN = process.env.TOKEN;
 const SERVER_IP = 'play.blendermc.fun〡19142';
 
 client.on('messageCreate', (message) => {
@@ -24,5 +24,6 @@ client.once('ready', () => {
 });
 
 client.login(process.env.TOKEN);
+
 
 
